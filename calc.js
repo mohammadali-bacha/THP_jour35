@@ -2,14 +2,6 @@ var nb1 = 10;
 var nb2 = 2;
 var result = 0;
 
-// function my_max(){
-// }
-// function vowel_count(){
-// }
-// function reverse(){
-// Array = [];
-// Array.reverse;
-// }
 
 function add() {
 var r = nb1 + nb2;

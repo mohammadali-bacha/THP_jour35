@@ -1,32 +1,13 @@
-function inverser(mot) {
+function my_max() {
 
-    var motInverse = "";
+    var arr = [2, 3, 1, 8, 6, 7];
 
+    var max = Math.max(...arr);
 
-
-    // Solution 1 : ajouter chaque lettre au début du mot inversé
-
-    for (var i = 0; i < mot.length; i++) {
-
-        motInverse = mot[i] + motInverse;
-
-    }
-
-
-
-    // Solution 2 : parcourir le mot de la fin vers le début
-
-    /*for (var i = mot.length - 1; i >= 0; i--) {
-
-        motInverse = motInverse + mot[i];
-
-    }*/
-
-
-
-    return motInverse;
+    console.log(max);
 
 }
+
 
 
 function vowel_count(mot) {
@@ -53,24 +34,28 @@ function vowel_count(mot) {
 
 
 
+function reverse(mot) {
+
+    var motInverse = "";
+
+    // parcourir le mot de la fin vers le début
+
+    for (var i = mot.length - 1; i >= 0; i--) {
+
+        motInverse = motInverse + mot[i];
+
+    }
 
 
-vowel_count('hubert andre du bobard');
 
-
-
-function my_max() {
-
-    var arr = [2, 3, 1, 8, 6, 7];
-
-    var max = Math.max(...arr);
-
-    console.log(max);
+    console.log(motInverse);
 
 }
 
 
 
+my_max()
 
+vowel_count('hubert andre du bobard');
 
-my_max();
+reverse('Bonjour monde !')
