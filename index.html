@@ -12,68 +12,117 @@
     <!-- crossorigin="anonymous"> -->
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-WuViQmTamrPyvMFZjf8te7HpKtdxuzV/HX1yG26a0d8yieIBr+beDf1ME99iX1cM"
          crossorigin="anonymous"> 
+        <script src="calc.js"></script>
 <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 <body>
 
 
-        <h1>JS Calculator</h1>
+                <h1>JS Calculator</h1>
+                
+                <form name="Calculator">
+                
+                    <input name="display" placeholder="0">
         
 <div>
 
-    <p>
-        <input type="text" readonly="readonly" id="demo" class="calc_resultat" />
-    </p>
-    <br>
     <div>
-        <input type="button" value="0" id="r">
+
+        <input type="button" value="0" onClick="Calculator.display.value +='0'">
+
     </div>
+
     <div>
-        <input type="button" value="1" id="r">
+
+        <input type="button" value="1" onClick="Calculator.display.value +='1'">
+
     </div>
+
     <div>
-        <input type="button" value="2" id="r">
+
+    <input type="button" value="2" onClick="Calculator.display.value +='2'">
+
     </div>
+
     <div>
-        <input type="button" value="+" id="r">
+
+        <input type="button" value="+" onClick="btnplus()">
+
     </div>
+
     <div>
-        <input type="button" value="3" id="r">
+
+        <input type="button" value="3" onClick="Calculator.display.value +='3'">
+
     </div>
+
     <div>
-        <input type="button" value="4" id="r">
+
+        <input type="button" value="4" onClick="Calculator.display.value +='4'">
+
     </div>
+
     <div>
-        <input type="button" value="5" id="r">
+
+        <input type="button" value="5" onClick="Calculator.display.value +='5'">
+
     </div>
+
     <div>
-        <input type="button" value="-" id="r">
+
+        <input type="button" value="-" onClick="btnsub()">
+
     </div>
+
     <div>
-        <input type="button" value="6" id="r">
+
+        <input type="button" value="6" onClick="Calculator.display.value +='6'">
+
     </div>
+
     <div>
-        <input type="button" value="7" id="r">
+
+        <input type="button" value="7" onClick="Calculator.display.value +='7'">
+
     </div>
+
     <div>
-        <input type="button" value="8" id="r">
+
+        <input type="button" value="8" onClick="Calculator.display.value +='8'">
+
     </div>
+
     <div>
-        <input type="button" value="*" id="r">
+
+        <input type="button" value="*" onClick="btnmult()">
+
     </div>
+
     <div>
-        <input type="button" value="9" id="r">
+
+        <input type="button" value="9" onClick="Calculator.display.value +='9'">
+
     </div>
+
     <div>
-        <input type="button" value="clear" id="r">
+
+        <input type="button" value="C" onClick="btnclear()">
+
     </div>
+
     <div>
-        <input type="button" value="=" id="r">
+
+        <input type="button" value="=" onClick="Calculator.display.value = eval (document.Calculator.display.value)">
+
     </div>
+
     <div>
-        <input type="button" value="/" id="r">
+
+        <input type="button" value="/" onClick="btndiv()">
+
     </div>
+
 </div>
 
     <!-- Scripts -->
@@ -82,7 +131,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script> -->
     <!-- <script src="assets/js/util.js"></script> -->
     <!--[if lte IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
-    <script src="calc.js"></script>
+    <!-- <script src="calc.js"></script> -->
 
 </body>
 
